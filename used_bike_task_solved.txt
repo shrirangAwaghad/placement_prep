@@ -1,0 +1,14 @@
+CREATE DATABASE bike_db;
+
+USE bike_db;
+
+
+ALTER TABLE used_bikes
+DROP INDEX idx_bike;
+
+CREATE INDEX idx_brand
+ON used_bikes(brand);
+
+SELECT * FROM used_bikes LIMIT 10;
+
+SELECT * FROM used_bikes LIMIT 10;
